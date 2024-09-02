@@ -1,0 +1,62 @@
+Título: Sistema de Gerenciamento de Biblioteca
+
+Descrição:
+
+O projeto "Sistema de Gerenciamento de Biblioteca" visa criar e gerenciar um banco de dados para a administração eficiente de uma biblioteca. O sistema permite a catalogação de autores, livros e empréstimos. Abaixo estão os principais componentes e funcionalidades do sistema:
+
+Criação do Banco de Dados:
+
+O banco de dados é criado com o nome Biblioteca, configurado para suportar a estrutura necessária para armazenar dados sobre autores, livros e empréstimos.
+Tabelas:
+
+Autores: Armazena informações sobre autores, incluindo um identificador único (AutorID), nome e nacionalidade.
+Livros: Contém dados sobre livros, incluindo título, identificador do autor (AutorID), ano de publicação e gênero. Estabelece uma relação de chave estrangeira com a tabela Autores.
+Empréstimos: Gerencia os empréstimos de livros, com dados sobre o livro emprestado (LivroID), data de empréstimo, data de devolução e nome do usuário. Estabelece uma relação de chave estrangeira com a tabela Livros.
+Funcionalidades:
+
+Inserção de Dados: Permite adicionar informações sobre autores, livros e registros de empréstimos.
+Consultas de Dados: Inclui consultas para listar livros com seus autores e para identificar empréstimos que ainda estão abertos.
+Atualização de Dados: Permite atualizar a data de devolução de um empréstimo específico.
+Exclusão de Dados: Facilita a remoção de livros e registros de empréstimos associados.
+# Sistema de Gerenciamento de Biblioteca
+
+## Descrição
+
+O projeto "Sistema de Gerenciamento de Biblioteca" é um sistema de banco de dados para gerenciar informações de uma biblioteca, incluindo autores, livros e empréstimos. Este projeto é implementado em SQL e permite a criação, modificação e consulta de dados relacionados a uma biblioteca.
+
+## Estrutura do Banco de Dados
+
+O banco de dados `Biblioteca` inclui as seguintes tabelas:
+
+- **Autores:** Contém informações sobre autores, com os campos `AutorID`, `Nome` e `Nacionalidade`.
+- **Livros:** Armazena dados sobre livros, incluindo `LivroID`, `Titulo`, `AutorID`, `AnoPublicacao` e `Genero`.
+- **Emprestimos:** Gerencia os empréstimos de livros, com `EmprestimoID`, `LivroID`, `DataEmprestimo`, `DataDevolucao` e `NomeUsuario`.
+
+## Funcionalidades
+
+- **Criação do Banco de Dados e Tabelas:** O script SQL cria o banco de dados e as tabelas necessárias.
+- **Inserção de Dados:** Adiciona registros iniciais de autores, livros e empréstimos.
+- **Consultas de Dados:** Executa consultas para listar livros e autores, e para verificar empréstimos em aberto.
+- **Atualização de Dados:** Atualiza informações sobre empréstimos.
+- **Exclusão de Dados:** Remove livros e empréstimos associados.
+
+## Uso
+
+1. Execute o script SQL em um sistema de gerenciamento de banco de dados compatível (por exemplo, MySQL).
+2. Modifique os dados conforme necessário para atender às suas necessidades específicas.
+3. Utilize as consultas e comandos fornecidos para gerenciar e consultar os dados da biblioteca.
+
+## Instalação
+
+1. Certifique-se de ter um sistema de gerenciamento de banco de dados SQL instalado (MySQL, MariaDB, etc.).
+2. Copie o script SQL para um arquivo `.sql`.
+3. Execute o script no seu sistema de gerenciamento de banco de dados para criar e populá-lo com as tabelas e dados iniciais.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir para este projeto criando issues, propondo melhorias ou submetendo pull requests.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
