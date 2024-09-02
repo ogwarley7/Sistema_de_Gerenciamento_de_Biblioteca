@@ -1,0 +1,22 @@
+# Ignorar arquivos e diretórios comuns de projeto
+*.log
+*.tmp
+*.bak
+
+# Ignorar arquivos de banco de dados locais
+*.sql
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos específicos de IDEs
+.vscode/
+.idea/
+
+# Ignorar outros arquivos temporários
+*.swp
+*.swo
+
+# Ignorar arquivos de configuração pessoal
+*.env
